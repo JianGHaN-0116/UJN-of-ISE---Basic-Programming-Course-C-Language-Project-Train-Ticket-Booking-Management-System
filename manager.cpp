@@ -43,7 +43,7 @@ int main()
         scanf("%s",dynamic_code);
         fp=fopen("code.txt","r");//动态密码
         fp1=fopen("error recordings.txt","a");//错误日志
-        fp2=fopen("information","wb");//信息存储
+        fp2=fopen("information.dat","wb");//信息存储
         fgets(correct,19,fp);
         while(strcmp(dynamic_code,correct)!=0)
         {
@@ -87,3 +87,4 @@ int main()
         return 0; 
     }
 //管理员系统，用来写入信息，和客户端用文件链接；
+
